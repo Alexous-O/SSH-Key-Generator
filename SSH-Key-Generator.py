@@ -27,8 +27,8 @@ def generate_ssh_key_pair(private_key_file, public_key_file):
     with open(public_key_file, "w") as public_key_file_obj:                         # Write the public key to a file
         public_key_file_obj.write(f"{key.get_name()} {key.get_base64()}")
 
-    print(f"Clé privée enregistrée dans {private_key_file}")
-    print(f"Clé publique enregistrée dans {public_key_file}")
+    print(f"Private key stored in {private_key_file}")
+    print(f"Public key stored in {public_key_file}")
 
 private_key_file = "id_private_key.txt"                                             # Set file names for keys
 public_key_file = "id_public_key.pub"
